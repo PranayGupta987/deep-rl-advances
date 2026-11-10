@@ -68,11 +68,15 @@ Grounded in contemporary literature (*NeurIPS / ICML / ICLR / AAAI*), the projec
 
 ```text
 .
-├── Final_Conference_Research_Report.pdf  # Publication-grade conference research monograph
-├── Project_Report.pdf                   # Semester project baseline report
+├── Enhanced-DQN-for-Stable-and-Sample-Efficient-Control.pdf  # Primary Project Research Report & Presentation
 ├── README.md                            # Comprehensive documentation & reproduction guide
-├── REPORT.md                            # Detailed theoretical methodology & oral defense prep
+├── LICENSE                              # MIT License
 ├── requirements.txt                     # Pinned project dependencies
+│
+├── reports/                             # Comprehensive Monograph & Historical Reports
+│   ├── Final_Conference_Research_Report.pdf  # Publication-grade conference research monograph
+│   ├── Project_Report.pdf                   # Semester project baseline report
+│   └── REPORT.md                            # Detailed theoretical methodology & oral defense prep
 │
 ├── src/                                 # Modular Reinforcement Learning Core
 │   ├── dqn_agent.py                     # Vanilla DQN baseline (Mnih et al., 2013)
@@ -89,20 +93,18 @@ Grounded in contemporary literature (*NeurIPS / ICML / ICLR / AAAI*), the projec
 │   ├── experiment_worker.py             # Standalone picklable worker for parallel execution
 │   └── train.py                         # Single-seed training pipeline
 │
-├── reports/                             # Research Reports & Publication PDFs
-│   ├── Final_Conference_Research_Report.pdf  # Publication-grade conference research monograph
-│   ├── Project_Report.pdf                   # Semester project baseline report
-│   └── REPORT.md                            # Detailed theoretical methodology & oral defense prep
-│
 ├── scripts/                             # Benchmark Execution & Statistical Analysis
+│   ├── run_training.py                  # Single-run baseline vs enhanced training
 │   ├── run_iteration1_parallel.py       # Multi-seed parallel benchmark for Iteration 1
-│   ├── analyze_iteration1.py            # Statistical analysis & Mann-Whitney U testing (It 1)
-│   ├── generate_pdf_report_iteration1.py# ReportLab publication compiler (It 1)
 │   ├── run_iteration2_benchmark.py      # Multi-seed parallel benchmark for Iteration 2
-│   ├── analyze_iteration2.py            # Statistical analysis & AUC evaluation (It 2)
-│   ├── generate_pdf_report_iteration2.py# ReportLab publication compiler (It 2)
 │   ├── run_iteration3_benchmark.py      # Multi-seed parallel benchmark for Iteration 3
+│   ├── analyze_iteration1.py            # Statistical analysis & Mann-Whitney U testing (It 1)
+│   ├── analyze_iteration2.py            # Statistical analysis & AUC evaluation (It 2)
 │   ├── analyze_iteration3.py            # Statistical analysis across full ensemble (It 3)
+│   ├── generate_plots.py                # Core reward and loss curve plotting
+│   ├── generate_pdf_report.py           # Baseline ReportLab PDF generator
+│   ├── generate_pdf_report_iteration1.py# ReportLab publication compiler (It 1)
+│   ├── generate_pdf_report_iteration2.py# ReportLab publication compiler (It 2)
 │   └── generate_final_conference_paper.py# Final unified conference monograph generator
 │
 └── results/                             # Benchmark Results & Visualizations

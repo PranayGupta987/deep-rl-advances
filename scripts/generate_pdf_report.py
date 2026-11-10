@@ -11,7 +11,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 
 
-def build_pdf_report(filename="Project_Report.pdf"):
+def build_pdf_report(filename="reports/Project_Report.pdf"):
     doc = SimpleDocTemplate(
         filename,
         pagesize=letter,

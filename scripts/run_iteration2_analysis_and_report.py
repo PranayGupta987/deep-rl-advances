@@ -20,15 +20,17 @@ def main():
 
     print("\n[+] Iteration 2 results found! Running statistical analysis & figure generation...")
 
+    scripts_dir = os.path.dirname(os.path.abspath(__file__))
+
     # Run analysis script
-    res = subprocess.run([sys.executable, "analyze_iteration2.py"], capture_output=True, text=True)
+    res = subprocess.run([sys.executable, os.path.join(scripts_dir, "analyze_iteration2.py")], capture_output=True, text=True)
     print(res.stdout)
     if res.returncode != 0:
         print("[ERROR] analyze_iteration2.py failed:", res.stderr)
         sys.exit(1)
 
     print("[+] Compiling conference-grade PDF report for Iteration 2...")
-    res2 = subprocess.run([sys.executable, "generate_pdf_report_iteration2.py"], capture_output=True, text=True)
+    res2 = subprocess.run([sys.executable, os.path.join(scripts_dir, "generate_pdf_report_iteration2.py")], capture_output=True, text=True)
     print(res2.stdout)
     if res2.returncode != 0:
         print("[ERROR] generate_pdf_report_iteration2.py failed:", res2.stderr)

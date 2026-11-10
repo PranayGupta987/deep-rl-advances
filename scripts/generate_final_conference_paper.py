@@ -58,7 +58,7 @@ class NumberedCanvas(canvas.Canvas):
         self.restoreState()
 
 
-def generate_pdf(output_pdf="Final_Conference_Research_Report.pdf"):
+def generate_pdf(output_pdf="reports/Final_Conference_Research_Report.pdf"):
     if not REPORTLAB_AVAILABLE:
         print("[Error] ReportLab is not installed.")
         return
