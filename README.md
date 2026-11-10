@@ -2,7 +2,8 @@
 
 **Research Team & Authors:**  
 - **Pranay Gupta** · Roll No: `102309025`  
-- **Idhant Mehta** · Roll No: `102323064`  
+- **Idhant Mehta** · Roll No: `102323064`
+- **Nakul Makol** · Roll No: `102486010`
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
