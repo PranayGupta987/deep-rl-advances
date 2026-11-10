@@ -183,6 +183,7 @@ Evaluated over $N=5$ seeds (`42, 100, 2013, 2024, 777`) on 200-episode horizons:
 ## 👥 Project Team & Authors
 - **Pranay Gupta** · Roll No: `102309025`
 - **Idhant Mehta** · Roll No: `102323064`
+- **Nakul Makol** · Roll No: `102486010`
 
 ---
 
