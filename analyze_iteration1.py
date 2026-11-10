@@ -14,6 +14,11 @@ Usage:
 
 import os
 import sys
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import json
 import numpy as np
 import matplotlib
@@ -132,7 +137,7 @@ def plot_multi_seed_learning_curves(data, out_dir="results/iteration1"):
     fig.savefig(os.path.join(out_dir, "multi_seed_learning_curves.png"), dpi=200)
     fig.savefig(os.path.join(out_dir, "multi_seed_learning_curves.pdf"))
     plt.close(fig)
-    print("✓ Saved multi_seed_learning_curves.png and .pdf")
+    print("[OK] Saved multi_seed_learning_curves.png and .pdf")
 
 
 # ── Figure 2: Final Performance Distribution (Boxplot + Jitter) ───────── #
@@ -181,7 +186,7 @@ def plot_final_performance_boxplot(data, out_dir="results/iteration1"):
     fig.savefig(os.path.join(out_dir, "final_performance_distribution.png"), dpi=200)
     fig.savefig(os.path.join(out_dir, "final_performance_distribution.pdf"))
     plt.close(fig)
-    print("✓ Saved final_performance_distribution.png and .pdf")
+    print("[OK] Saved final_performance_distribution.png and .pdf")
 
 
 # ── Figure 3: Quantile Uncertainty & Risk Sensitivity ─────────────────── #
@@ -215,7 +220,7 @@ def plot_risk_sensitivity(data, out_dir="results/iteration1"):
     fig.savefig(os.path.join(out_dir, "risk_sensitivity_curves.png"), dpi=200)
     fig.savefig(os.path.join(out_dir, "risk_sensitivity_curves.pdf"))
     plt.close(fig)
-    print("✓ Saved risk_sensitivity_curves.png and .pdf")
+    print("[OK] Saved risk_sensitivity_curves.png and .pdf")
 
 
 # ── Statistical Testing Table ─────────────────────────────────────────── #
@@ -280,7 +285,7 @@ def compute_statistical_tests(data):
         f.write("Environment & Algorithm & Final Return & Median [IQR] & $p$ (vs. Vanilla) & $p$ (vs. Enhanced) \\\\\n\\midrule\n")
         f.write("\n".join(latex_rows))
         f.write("\n\\bottomrule\n\\end{tabular}\n\\end{table}\n")
-    print(f"\n✓ LaTeX table written to {latex_path}")
+    print(f"\n[OK] LaTeX table written to {latex_path}")
 
 
 if __name__ == "__main__":
@@ -289,4 +294,4 @@ if __name__ == "__main__":
     plot_final_performance_boxplot(data)
     plot_risk_sensitivity(data)
     compute_statistical_tests(data)
-    print("\n✓ Iteration 1 analysis completed successfully.")
+    print("\n[OK] Iteration 1 analysis completed successfully.")

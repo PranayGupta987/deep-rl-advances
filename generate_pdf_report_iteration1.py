@@ -13,6 +13,12 @@ Usage:
     python generate_pdf_report_iteration1.py
 """
 
+import sys
+if sys.stdout.encoding and sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 import os
 import json
 import numpy as np
@@ -366,7 +372,7 @@ def build_pdf_report(filename="results/iteration1/Iteration1_Research_Report.pdf
         story.append(Paragraph(f"• {r}", ParagraphStyle('Ref', parent=body_style, leftIndent=8, spaceAfter=2.5, fontSize=7.5, leading=10.5)))
 
     doc.build(story)
-    print(f"✓ Successfully generated publication report: {filename}")
+    print(f"[OK] Successfully generated publication report: {filename}")
 
 
 if __name__ == "__main__":
