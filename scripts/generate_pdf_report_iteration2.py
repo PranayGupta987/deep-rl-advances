@@ -135,7 +135,7 @@ def build_pdf_report(
 
     # Title & Subtitle
     story.append(Paragraph("Self-Supervised Contrastive Representation Learning for Sample-Efficient Distributional Deep RL", title_style))
-    story.append(Paragraph("Iteration 2: Bilinear InfoNCE Auxiliary Objectives with Momentum Encoders on Distributional Value Functions", subtitle_style))
+    story.append(Paragraph("<b>Pranay Gupta</b> (102309025) &nbsp;|&nbsp; <b>Idhant Mehta</b> (102323064)<br/>Iteration 2: Bilinear InfoNCE Auxiliary Objectives with Momentum Encoders on Distributional Value Functions", subtitle_style))
     story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor("#2563eb"), spaceAfter=10))
 
     # Abstract Box

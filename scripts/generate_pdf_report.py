@@ -93,7 +93,7 @@ def build_pdf_report(filename="reports/Project_Report.pdf"):
     # ──────────────── Title Header ────────────────
     story.append(Paragraph("Enhancing Deep Q-Networks: Mitigating Overestimation Bias and Improving Sample Efficiency via Double DQN and Prioritized Experience Replay", title_style))
     story.append(Spacer(1, 8))
-    story.append(Paragraph("<b>Reinforcement Learning Semester Project Report</b><br/>Submitted in partial fulfillment of coursework requirements | Date: November 2026", subtitle_style))
+    story.append(Paragraph("<b>Pranay Gupta</b> (102309025) &nbsp;|&nbsp; <b>Idhant Mehta</b> (102323064)<br/><b>Reinforcement Learning Semester Project Report</b> | Date: November 2026", subtitle_style))
     story.append(Spacer(1, 12))
     story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor('#2b6cb0'), spaceAfter=12))
 

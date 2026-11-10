@@ -139,6 +139,7 @@ def build_pdf_report(filename="results/iteration1/Iteration1_Research_Report.pdf
         title_style
     ))
     story.append(Paragraph(
+        "<b>Pranay Gupta</b> (102309025) &nbsp;|&nbsp; <b>Idhant Mehta</b> (102323064)<br/>"
         "<b>Iteration 1 Research Paper & Benchmark Report</b><br/>"
         "Advanced Agentic Coding Research Group | NeurIPS / ICLR Standards Track<br/>"
         "Benchmark: Multi-Seed Statistical Evaluation (N=5 Independent Seeds: 42, 100, 2013, 2024, 777)",

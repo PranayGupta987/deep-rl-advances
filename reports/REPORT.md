@@ -4,8 +4,11 @@
 **Enhancing Deep Q-Networks: Mitigating Overestimation Bias and Improving Sample Efficiency via Double DQN and Prioritized Experience Replay**
 
 **Domain:** Deep Reinforcement Learning  
+**Project Investigators / Authors:**
+- **Pranay Gupta** — Roll No: **102309025**
+- **Idhant Mehta** — Roll No: **102323064**
+
 **Target Paper:** *Playing Atari with Deep Reinforcement Learning* (Mnih et al., NeurIPS 2013 Workshop / DeepMind)  
-**Authors / Year:** Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller (2013)  
 **Submission Date:** November 2026  
 
 ---

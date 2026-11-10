@@ -1,5 +1,9 @@
 # Advances in Deep Reinforcement Learning: From Distributional QR-DQN to Epistemic Uncertainty Ensembles
 
+**Research Team & Authors:**  
+- **Pranay Gupta** · Roll No: `102309025`  
+- **Idhant Mehta** · Roll No: `102323064`  
+
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -175,12 +179,18 @@ Evaluated over $N=5$ seeds (`42, 100, 2013, 2024, 777`) on 200-episode horizons:
 
 ---
 
+## 👥 Project Team & Authors
+- **Pranay Gupta** · Roll No: `102309025`
+- **Idhant Mehta** · Roll No: `102323064`
+
+---
+
 ## 📜 Citation & License
 This project is open-source under the [MIT License](LICENSE).
 ```bibtex
 @article{gupta2026deeprladvances,
   title={Advances in Deep Reinforcement Learning: From Distributional QR-DQN to Epistemic Uncertainty Ensembles},
-  author={Gupta, Pranay},
+  author={Gupta, Pranay and Mehta, Idhant},
   year={2026}
 }
 ```

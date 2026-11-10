@@ -159,7 +159,7 @@ def generate_pdf(output_pdf="reports/Final_Conference_Research_Report.pdf"):
 
     # Title & Metadata
     story.append(Paragraph("Scaling Deep Reinforcement Learning Rigor: A Three-Tiered Advancement from Distributional QR-DQN to Epistemic Uncertainty Ensembles", title_style))
-    story.append(Paragraph("Autonomous Research Agent & Conference Review Board<br/><i>Venues targeted: NeurIPS / ICML / ICLR</i>", subtitle_style))
+    story.append(Paragraph("<b>Pranay Gupta</b> (102309025) &nbsp;|&nbsp; <b>Idhant Mehta</b> (102323064)<br/><i>Venues targeted: NeurIPS / ICML / ICLR</i>", subtitle_style))
     story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor("#1A2B4C"), spaceAfter=15))
 
     # Abstract
