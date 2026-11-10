@@ -89,22 +89,28 @@ Grounded in contemporary literature (*NeurIPS / ICML / ICLR / AAAI*), the projec
 │   ├── experiment_worker.py             # Standalone picklable worker for parallel execution
 │   └── train.py                         # Single-seed training pipeline
 │
-├── results/                             # Benchmark Results & Visualizations
-│   ├── metrics.json                     # Quantitative baseline metrics
-│   ├── learning_curves.png              # Learning curve comparison
-│   ├── iteration1/                      # Iteration 1 multi-seed checkpoints & results
-│   ├── iteration2/                      # Iteration 2 multi-seed checkpoints & results
-│   └── iteration3/                      # Iteration 3 multi-seed checkpoints & results
+├── reports/                             # Research Reports & Publication PDFs
+│   ├── Final_Conference_Research_Report.pdf  # Publication-grade conference research monograph
+│   ├── Project_Report.pdf                   # Semester project baseline report
+│   └── REPORT.md                            # Detailed theoretical methodology & oral defense prep
 │
-├── run_iteration1_parallel.py           # Multi-seed parallel benchmark for Iteration 1
-├── analyze_iteration1.py                # Statistical analysis & Mann-Whitney U testing (It 1)
-├── generate_pdf_report_iteration1.py    # ReportLab publication compiler (It 1)
-├── run_iteration2_benchmark.py          # Multi-seed parallel benchmark for Iteration 2
-├── analyze_iteration2.py                # Statistical analysis & AUC evaluation (It 2)
-├── generate_pdf_report_iteration2.py    # ReportLab publication compiler (It 2)
-├── run_iteration3_benchmark.py          # Multi-seed parallel benchmark for Iteration 3
-├── analyze_iteration3.py                # Statistical analysis across full ensemble (It 3)
-└── generate_final_conference_paper.py   # Final unified conference monograph generator
+├── scripts/                             # Benchmark Execution & Statistical Analysis
+│   ├── run_iteration1_parallel.py       # Multi-seed parallel benchmark for Iteration 1
+│   ├── analyze_iteration1.py            # Statistical analysis & Mann-Whitney U testing (It 1)
+│   ├── generate_pdf_report_iteration1.py# ReportLab publication compiler (It 1)
+│   ├── run_iteration2_benchmark.py      # Multi-seed parallel benchmark for Iteration 2
+│   ├── analyze_iteration2.py            # Statistical analysis & AUC evaluation (It 2)
+│   ├── generate_pdf_report_iteration2.py# ReportLab publication compiler (It 2)
+│   ├── run_iteration3_benchmark.py      # Multi-seed parallel benchmark for Iteration 3
+│   ├── analyze_iteration3.py            # Statistical analysis across full ensemble (It 3)
+│   └── generate_final_conference_paper.py# Final unified conference monograph generator
+│
+└── results/                             # Benchmark Results & Visualizations
+    ├── metrics.json                     # Quantitative baseline metrics
+    ├── learning_curves.png              # Learning curve comparison
+    ├── iteration1/                      # Iteration 1 multi-seed checkpoints & results
+    ├── iteration2/                      # Iteration 2 multi-seed checkpoints & results
+    └── iteration3/                      # Iteration 3 multi-seed checkpoints & results
 ```
 
 ---
@@ -113,7 +119,7 @@ Grounded in contemporary literature (*NeurIPS / ICML / ICLR / AAAI*), the projec
 
 ### 1. Environment Setup
 ```bash
-git clone https://github.com/<username>/deep-rl-advances.git
+git clone https://github.com/PranayGupta987/deep-rl-advances.git
 cd deep-rl-advances
 pip install -r requirements.txt
 ```
@@ -122,29 +128,29 @@ pip install -r requirements.txt
 Execute 5-seed parallel benchmarks across any iteration:
 ```bash
 # Iteration 1: QR-DQN & Risk Distortion Benchmark
-python run_iteration1_parallel.py
+python scripts/run_iteration1_parallel.py
 
 # Iteration 2: Self-Supervised Contrastive RL Benchmark
-python run_iteration2_benchmark.py
+python scripts/run_iteration2_benchmark.py
 
 # Iteration 3: Epistemic Ensemble & Unified Apex Benchmark
-python run_iteration3_benchmark.py
+python scripts/run_iteration3_benchmark.py
 ```
 
 ### 3. Statistical Analysis & Hypothesis Testing
 Evaluate statistical significance with 95% bootstrap confidence intervals (2,000 resamples):
 ```bash
-python analyze_iteration1.py
-python analyze_iteration2.py
-python analyze_iteration3.py
+python scripts/analyze_iteration1.py
+python scripts/analyze_iteration2.py
+python scripts/analyze_iteration3.py
 ```
 
 ### 4. Build Conference Publication Monograph
 Generate the comprehensive two-pass paginated publication PDF:
 ```bash
-python generate_final_conference_paper.py
+python scripts/generate_final_conference_paper.py
 ```
-Output: `Final_Conference_Research_Report.pdf`
+Output: `reports/Final_Conference_Research_Report.pdf`
 
 ---
 
