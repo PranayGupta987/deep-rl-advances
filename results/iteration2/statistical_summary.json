@@ -1,0 +1,78 @@
+{
+  "CartPole-v1": {
+    "enhanced": {
+      "final_50_mean": 135.156,
+      "final_50_std": 43.963162761566636,
+      "final_50_median": 114.12,
+      "final_50_iqr": 42.900000000000006,
+      "auc_mean": 76.43199999999999,
+      "auc_std": 12.480148035980982
+    },
+    "qr_dqn": {
+      "final_50_mean": 182.36400000000003,
+      "final_50_std": 63.24470159626022,
+      "final_50_median": 166.86,
+      "final_50_iqr": 52.879999999999995,
+      "auc_mean": 99.72,
+      "auc_std": 16.347107159983995
+    },
+    "contrastive_qr_dqn": {
+      "final_50_mean": 91.14000000000001,
+      "final_50_std": 36.59647250760653,
+      "final_50_median": 82.3,
+      "final_50_iqr": 38.10000000000001,
+      "auc_mean": 57.303,
+      "auc_std": 11.895937646944862
+    },
+    "tests": {
+      "contrastive_vs_qrdqn": {
+        "U": 1.0,
+        "p_val": 0.015873015873015872,
+        "cohens_d": -1.9739732439347544
+      },
+      "contrastive_vs_enhanced": {
+        "U": 4.0,
+        "p_val": 0.09523809523809523,
+        "cohens_d": -1.2166617361965575
+      }
+    }
+  },
+  "Acrobot-v1": {
+    "enhanced": {
+      "final_50_mean": -107.172,
+      "final_50_std": 10.044108721036421,
+      "final_50_median": -102.76,
+      "final_50_iqr": 10.579999999999998,
+      "auc_mean": -198.603,
+      "auc_std": 16.572002971880007
+    },
+    "qr_dqn": {
+      "final_50_mean": -103.51199999999999,
+      "final_50_std": 6.950174098538827,
+      "final_50_median": -102.04,
+      "final_50_iqr": 9.540000000000006,
+      "auc_mean": -182.342,
+      "auc_std": 5.357278460188537
+    },
+    "contrastive_qr_dqn": {
+      "final_50_mean": -97.94399999999999,
+      "final_50_std": 2.8032623851505614,
+      "final_50_median": -98.26,
+      "final_50_iqr": 1.7000000000000028,
+      "auc_mean": -200.638,
+      "auc_std": 19.725906062840313
+    },
+    "tests": {
+      "contrastive_vs_qrdqn": {
+        "U": 20.0,
+        "p_val": 0.15079365079365079,
+        "cohens_d": 1.1747441975366768
+      },
+      "contrastive_vs_enhanced": {
+        "U": 21.0,
+        "p_val": 0.09523809523809523,
+        "cohens_d": 1.3991946413215788
+      }
+    }
+  }
+}

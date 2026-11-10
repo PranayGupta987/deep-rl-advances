@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\caption{Iteration 2 Benchmark: Self-Supervised Contrastive Representation Learning (CURL + QR-DQN) vs Baselines across $N=5$ Seeds. (Mean $\pm$ Std and Median (IQR) reported).}
+\label{tab:iteration2_results}
+\begin{tabular}{llccc}
+\toprule
+Environment & Algorithm & Final 50-Ep Return & Median (IQR) & Sample Efficiency (AUC) \\
+\midrule
+CartPole-v1 & Enhanced DQN & 135.2 \pm 44.0 & 114.1 (42.9) & 76.4 \pm 12.5 \\
+CartPole-v1 & QR-DQN & 182.4 \pm 63.2 & 166.9 (52.9) & 99.7 \pm 16.3 \\
+CartPole-v1 & Contrastive QR-DQN & \textbf{91.1 \pm 36.6} & 82.3 (38.1) & \textbf{57.3 \pm 11.9} \\
+Acrobot-v1 & Enhanced DQN & -107.2 \pm 10.0 & -102.8 (10.6) & -198.6 \pm 16.6 \\
+Acrobot-v1 & QR-DQN & -103.5 \pm 7.0 & -102.0 (9.5) & -182.3 \pm 5.4 \\
+Acrobot-v1 & Contrastive QR-DQN & \textbf{-97.9 \pm 2.8} & -98.3 (1.7) & \textbf{-200.6 \pm 19.7} \\
+\bottomrule
+\end{tabular}
+\end{table*}

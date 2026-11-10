@@ -118,7 +118,7 @@ def plot_auc_sample_efficiency(data, out_dir="results/iteration2"):
             auc = np.mean(r_mat, axis=1)  # mean return over all episodes = Area Under Curve normalized
             auc_data.append(auc)
 
-        bp = ax.boxplot(auc_data, labels=[AGENT_NAMES[ag].split(' (')[0] for ag in agents],
+        bp = ax.boxplot(auc_data, tick_labels=[AGENT_NAMES[ag].split(' (')[0] for ag in agents],
                         patch_artist=True, widths=0.55)
         for patch, ag in zip(bp['boxes'], agents):
             patch.set_facecolor(PALETTE[ag])
